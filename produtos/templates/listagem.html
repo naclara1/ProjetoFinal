@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<!--Banner Imagem-->
+<div class="barraSN container-fluid justify-content-center align-items-center" style="margin-bottom:15px">
+    <h1 class="text-anun content text-center">
+        Outfits belíssimos para você nunca mais cancelar<br>
+        rolê com a amiga dizendo "ai, tô sem look de sair"<br>
+    </h1>
+</div>
+<main>
+    <div style="display: flex; justify-content: space-around;">
+{% for produto in produtos %}
+        <div class="card mb-3" style="max-width: 840px; margin-bottom: 15px;">
+            <div class="row g-0">
+                <div class="col-md-3">
+                    <img src="{{produto.imagem.url}}" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-9">
+                    <div class="card-body">
+                        <h3 class="card-tag">#{{produto.categoria}}</h3>
+                        <h2 class="card-title">{{produto.nome}}</h2>
+                        <h1 class="card-text">R$ {{produto.preco}}</h1>
+                        <a href="{% url 'detalhes' produto.id %}"><button type="button" class="btn btn-outline-dark">Detalhes</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endfor %}
+</div>
+</main>
+{% endblock conteudo %}

@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block conteudo %}
+<!--Banner Imagem-->
+<div class="banner-image w-100 d-flex justify-content-center align-items-center"></div>
+<img src="{% static 'imagens/anunciar.png' %}" class="card-img-top" alt="..." style="margin-bottom:15px">
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="card col-4" style="padding-right: 0px;
+    padding-left: 0px;">
+            <img src="{%static 'imagens/outfits.png' %}" class="card-img-top" alt="..."> 
+            <div class="card-body">
+                <a href="{% url 'listagem' %}" class="btn btn-dark col">Outfits</a>
+            </div>
+        </div>
+        <div class="card col-4" style="padding-right: 0px;
+    padding-left: 0px;">
+            <img src="{%static 'imagens/bolsas.jpg' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <a href="#" class="btn btn-dark col">Bolsas</a>
+            </div>
+        </div>
+        <div class="card col-4" style="padding-right: 0px;
+    padding-left: 0px;">
+            <img src="{%static 'imagens/acessorios.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <a href="#" class="btn btn-dark col">Acessórios</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock conteudo %}

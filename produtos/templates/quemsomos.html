@@ -1,0 +1,149 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block conteudo %}
+
+<!--Banner Imagem-->
+<div class="barraSN container-fluid justify-content-center align-items-center" style="margin-bottom:15px">
+    <h1 class="text-anun content text-center">
+        Olá, nós somos Ana Clara, Giovana Lisboa<br>
+        Isadora Bessa e Maria Fernanda<br>
+        Somos fundadoras e criadoras da loja Iaiá!<br>
+        Conheça um pouco mais sobre nós :)
+    </h1>
+</div>
+
+<main class="container" >
+    <div class="row">
+    <section class="fluid">
+
+        <section class="fundadoras">
+            <div class="container" style="align-items: center; text-align: center;">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="perfil">
+                            <img src="{%static 'imagens/Naclara.png' %}" class="img-fluid" alt="...">
+                        </div>
+                        <h2>Ana Clara</h2>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="perfil">
+                            <img class="img-fluid" src="{%static 'imagens/Isadora.png' %}">
+                        </div>
+                        <h2>Giovana Lisboa</h2>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="perfil">
+                            <img class="img-fluid" src="{%static 'imagens/Isadora.png' %}">
+                        </div>
+                        <h2>Isadora Bessa</h2>
+                    </div>
+
+                    <div class="col-3">
+                        <div class="perfil">
+                            <img class="img-fluid" src="{%static 'imagens/Isadora.png' %}">
+                        </div>
+                        <h2>Maria Fernanda</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="row">
+        <p1>Nossa proposta para a loja é fazer com que nossos clientes tenham acesso ao mundo da moda de uma maneira
+            diferente, porém ainda sim estilosa. O objetivo é trazer looks com uma pegada mais sofisticada e marcante.
+        </p1>
+        <p2>Esperamos que goste do nosso catálogo e se identifique com as peças :).</p2> <br />
+        
+    <br>
+        <b>
+            <h1>Agora vamos conhecer um pouco mais sobre as origens da loja: </h1>
+        </b>
+        </div>
+
+        <section>
+            <br>
+            <div class="card mb" style="max-width: 900px; margin-bottom: 25px; margin-left: 30px;">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <img id="logoCard" src="{%static 'imagens/iaiá.png' %}" class="img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md">
+                        <div class="card-body">
+                            <h2 class="card-title"><b>Por trás do nome</b> </h2>
+                            <p class="card-text "> O nome "Iaiá" se apropria do simbolismo do tratamento que se dava às
+                                meninas e às moças durante o período colonial. Ele também faz referência à importância
+                                da palavra dentro da religião da Umbanda, que tem como significado mamãe ou senhora.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section>
+            <br>
+            <div class="card mb" style="max-width: 900px; margin-bottom: 25px; margin-left: 30px;">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <img id="logoCard" src="{%static 'imagens/iaiácores.png' %}" class="img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md">
+                        <div class="card-body">
+                            <h2 class="card-title"><b>Por trás das cores</b> </h2>
+                            <p class="card-text "> O conjunto das cores foi inspirado nos tons do pôr do sol: lilás e
+                                laranja. Ambas as cores carregam o significado de criatividade, transmitindo assim a
+                                identidade da loja e de seus consumidores.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <h1 class="titulon">Nossos valores</h3>
+        <section class="cardValores">
+            <div class="card-group container-fluid" cl>
+                <div class="card" style="border-radius: 0px 0px 10px 10px; width:auto;">
+                    <i class=material-icons id="icon">military_tech</i>
+                    <div id="cardV1" class="card-body">
+                        <h5 class="card-title" id="hvalor">Autenticidade</h5>
+                    </div>
+                </div>
+                <div>
+                    <p class="spcCard"></p>
+                </div>
+                <div class="card" style="margin-left:16px; border-radius: 0px 0px 8px 8px;">
+                    <i class=material-icons id="icon">eco</i>
+                    <div id="cardV2" class="card-body">
+                        <h5 class="card-title" id="hvalor">Sustentabilidade</h5>
+                    </div>
+                </div>
+                <div>
+                    <p class="spcCard"></p>
+                </div>
+                <div class="card" style="margin-left:16px; border-radius: 0px 0px 8px 8px;">
+                    <i class=material-icons id="icon">person</i>
+                    <div id="cardV3" class="card-body">
+                        <h5 class="card-title" id="hvalor">Autonomia</h5>
+                    </div>
+                </div>
+                <div>
+                    <p class="spcCard" style="margin-left:16px;border-radius: 0px 0px 8px 8px;"></p>
+                </div>
+                <div class="card">
+                    <i class=material-icons id="icon">star</i>
+                    <div id="cardV4" class="card-body">
+                        <h5 class="card-title" id="hvalor">Exclusividade</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </main>
+{% endblock conteudo %}

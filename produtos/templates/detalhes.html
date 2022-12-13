@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<div class="barraSN container-fluid justify-content-center align-items-center" style="margin-bottom:15px">
+    <h1 class="text-anun content text-center">
+        Que escolha babado.<br>
+        Eu amei!<br>
+    </h1>
+</div>
+<div class="container">
+   
+    <div class="container">
+      <div class="card">
+        <div class="row">
+          <aside class="col-sm-5 border-right divImagem">
+           
+                <div style="display: flex; height:100%;align-items: center;justify-content: center;">
+                  <a href="#"
+                    ><img width="200px" src="{{produto.imagem.url}}" class="imgProdutoDetalhe"
+                  /></a>
+                </div>
+    
+            <!-- gallery-wrap .end// -->
+          </aside>
+          <aside class="col-sm-7">
+            <article class="card-body p-5">
+              <h3 class="title mb-3">{{produto.nome}}</h3>
+    
+              <p class="price-detail-wrap">
+                <span class="price h3 text-warning">
+                  <span class="currency">R$</span
+                  ><span class="num">{{produto.preco}}</span>
+                </span>
+              </p>
+              <!-- price-detail-wrap .// -->
+              <dl class="item-property">
+                <dt>Descrição:</dt>
+                <dd><p>{{produto.descricao}}</p></dd>
+              </dl>
+              <a href="{% url 'detalhes' produto.id %}"><button type="button" class="btn btn-outline-dark">Comprar</button></a>
+            </article>
+            <!-- card-body.// -->
+          </aside>
+          <!-- col.// -->
+        </div>
+        <!-- row.// -->
+      </div>
+      <!-- card.// -->
+    </div>
+    <!--container.//-->
+{% endblock conteudo %}
