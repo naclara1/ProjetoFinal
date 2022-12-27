@@ -35,6 +35,7 @@ class MiniCurso(models.Model):
 class Usuario(models.Model):
     nome = models.CharField(max_length=150)
     username = models.CharField(max_length=150)
+    cpf = models.CharField(max_length=14)
     email = models.EmailField()
     data_nascimento = models.DateTimeField()
     senha = models.CharField(max_length=150)

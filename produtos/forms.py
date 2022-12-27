@@ -14,4 +14,5 @@ class UsuarioForm(forms.ModelForm):
     
         widgets = {
             'data_nascimento': forms.TimeInput(attrs={'type': 'date'}),
+            'cpf': forms.TextInput(attrs={'data-mask': '000.000.000-00'})
         }

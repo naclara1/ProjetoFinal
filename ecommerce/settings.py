@@ -127,3 +127,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+#coloquei assim pq vc vai logar ao tentar fazer uma compra
+#apesar de não ser o ideal, serve para o projeto
+LOGIN_REDIRECT_URL='index'

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block conteudo %}
+<div class="barraSN container-fluid justify-content-center align-items-center" style="margin-bottom:15px">
+    <h1 class="text-anun content text-center">
+        SÓ<br>
+        PRA<br>
+        EU<br>
+        TESTAR
+    </h1>
+</div>
+<div class="container">
+    <div class="row">
+        <div id="register-link" class="text-right">
+            <a href="{% url 'sacola' produto.id %}" class="text-info">Finalizar compra</a>
+        </div>
+    </div>
+</div>
+{% endblock conteudo %}
