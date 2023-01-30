@@ -16,8 +16,6 @@ def cadastro_usuario(request):
     return render (request, 'forms.html', {'form' : forms })
 
 
-def base (request):
-    return render(request, 'base.html')
 
 #@login_required
 def index(request):
